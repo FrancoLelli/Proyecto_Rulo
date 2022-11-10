@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blur-in{animation:blur-in 0.9s linear} @keyframes blur-in{0%{filter:blur(50px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+.video1 {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: black ;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: whitesmoke;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: 'Staatliches', cursive;
+    background-color: grey ;
+}
+
+.barra {
+    display: none; 
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+
+header .logo{
+    position: relative;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;
+}
+
+.containere{
+    width: 85%;
+    max-width: 950px;
+    margin:0 auto;
+}
+
+.abajo{
+    background-color: rgb(86, 85, 85);
+    padding: 20px 20px;
+}
+
+.abajo .logo, .abajo nav ul li a, .colorIcon{
+    color: whitesmoke;
+    transition: 0.7s;
+}
+
+.linea:after{
+    content: "";
+    position: absolute;
+    margin-top: 5px 0;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.6s ease-in-out;
+}
+
+.linea:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Staatliches', cursive;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    transition: transform 0.6s ease-in-out;
+}
+
+.about{
+    transition: transform 2s ease-in-out;
+}
+
+.color{
+    position: relative;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    color: whitesmoke;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+header ul li a:hover{
+    color: white;
+}
+
+.footere{
+    padding: 25px 0;
+    background: #2b2a2a;
+    text-align: center;
+    margin-top: auto; 
+    color: whitesmoke;
+}
+
+.cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.zona2{
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.todo2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tit2{
+    font-size: 60px;
+}
+
+.todotext2{
+    width: 50%;
+}
+
+.text2{
+    margin: 20px 0px;
+    font-size: 30px;
+    color: rgb(92, 89, 89);
+}
+
+.zona3{
+    height: 100vh;
+    background-color: red;
+    flex-direction: row;
+}
+
+/*-------------------------------------------------------*/
+.galeria_conteiner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    width: 100%;
+}
+
+.galeria_imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.galeria_item p{
+    color: white;
+}
+
+.galeria_item:hover{
+    opacity: 2;
+}
+
+.galeria_item{
+    position: relative;
+    opacity: 1;
+    background: #333;
+}
+
+.galeria_titulo{
+    position: absolute;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    bottom: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 30px;
+    transition: 1s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.galeria_titulo:hover{
+    opacity: 1;
+    background-color: rgb(83, 81, 81);
+    transition: 1s linear, height 2s ease-in;
+    box-shadow: 10px 7px 33px -17px rgba(0,0,0,0.75);
+}
+  
+  /*-------------------------------------------------------*/
+
+
+
+.zona4{
+    height: 100vh;
+    background-color: grey ;
+}
+
+.todo4{
+    margin-top: 20%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todotext4{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.text4{
+    margin: 20px 10px;
+    font-size: 30px;
+    color: rgb(92, 89, 89);
+}
+
+.cada{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+    .navegation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .galeria_conteiner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        width: 100%;
+    }
+    
+
+    .barra{
+        display: block;
+        cursor: pointer;
+    }
+
+    .text2{
+        margin: 10px 0px;
+        font-size: 20px;
+        color: rgb(92, 89, 89);
+    }
+
+    .ver{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navegation ul{
+        display: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .navegation ul.show{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        height: 100%;
+    } 
+
+    .navegation ul li{
+        display: block;
+    }
+    
+    .navegation ul li a{
+        display: block;
+        padding: 1.5rem 5rem;
+        transition: all 0.4s linear; 
+        font-size: 20px;
+    }
+    
+    .navegation ul li a:hover{
+        background: rgb(96, 96, 96);
+        border-radius: 5px;
+    
+    }
+
+    .zona4{
+        height: 100vh;
+        background-color: grey ;
+    }
+
+    .todo4{
+        margin-top: 100%;
+    }
+
+    .footere{
+        font-size: 12px;
+    }
+}
